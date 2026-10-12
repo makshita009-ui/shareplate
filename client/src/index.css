@@ -1,0 +1,50 @@
+:root{--bg:#eef4ea;--ink:#0f2a20;--leaf:#1f6b4a;--leaf2:#d7ebdd;--mango:#ffb627;--berry:#b4234f;--card:#fff;--muted:#5a6f63;--line:#cfdcd2}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 'Figtree',system-ui,sans-serif}
+h1,h2,h3,.logo,.hero-card b,.tile b,.t-stub strong{font-family:'Bricolage Grotesque',sans-serif;line-height:1.1;letter-spacing:-.02em}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);font-weight:800;margin:0 0 1rem;max-width:14ch}
+h2{font-size:1.9rem;margin:2rem 0 1rem}h3{margin:.2rem 0 .4rem;font-size:1.25rem}
+a{color:var(--leaf)}.wrap{max-width:1040px;margin:0 auto;padding:0 20px 60px}
+.muted{color:var(--muted)}.small{font-size:.88rem;margin:.2rem 0}.lead{font-size:1.15rem;max-width:46ch;color:var(--muted)}
+:focus-visible{outline:3px solid var(--mango);outline-offset:2px}
+.nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;max-width:1040px;margin:0 auto;padding:18px 20px}
+.nav nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.nav nav a:not(.btn){text-decoration:none;color:var(--ink);font-weight:500}.nav nav a.active{border-bottom:3px solid var(--mango)}
+.logo{font-size:1.5rem;font-weight:800;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:8px}
+.dot{width:18px;height:18px;border-radius:50%;background:var(--mango);box-shadow:inset -5px -4px 0 rgba(0,0,0,.12)}
+.btn{background:var(--ink);color:#fff;border:2px solid var(--ink);padding:9px 18px;border-radius:999px;font:600 .95rem 'Figtree';cursor:pointer;text-decoration:none;display:inline-block}
+.btn:hover{background:var(--leaf);border-color:var(--leaf)}.btn.ghost{background:transparent;color:var(--ink)}.btn.ghost:hover{background:var(--leaf2)}
+.btn.big{padding:13px 26px;font-size:1.05rem}.link{background:none;border:0;color:var(--berry);cursor:pointer;font:inherit;text-decoration:underline}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:1.4rem}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:center;padding:48px 0 30px}
+.hero-card{background:var(--ink);color:#fff;border-radius:28px;padding:34px;display:flex;flex-direction:column;gap:6px;transform:rotate(2deg)}
+.hero-card b{font-size:clamp(3.5rem,9vw,5.5rem);color:var(--mango)}.hero-card .muted{color:#b9d1c2}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px;border-top:2px solid var(--ink);padding-top:24px}
+.steps p{color:var(--muted);margin:0}
+.card{background:var(--card);border-radius:22px;padding:24px;border:1px solid var(--line)}
+.form{display:flex;flex-direction:column;gap:12px}.narrow{max-width:440px;margin:40px auto}.form h2{margin:0}
+input,select{width:100%;padding:11px 14px;border:1.5px solid var(--line);border-radius:12px;font:inherit;background:#fbfdfb;color:var(--ink)}
+input:focus,select:focus{border-color:var(--leaf);outline:none}label{display:flex;flex-direction:column;gap:4px;font-size:.88rem;font-weight:600}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.seg{display:flex;background:var(--leaf2);border-radius:999px;padding:4px}.seg button{flex:1;border:0;background:none;padding:9px;border-radius:999px;font:600 .88rem 'Figtree';cursor:pointer;color:var(--ink)}.seg .on{background:var(--ink);color:#fff}
+.filters{display:flex;gap:10px;margin-bottom:22px;flex-wrap:wrap}.filters input{max-width:220px}
+.notice{background:#fff3d1;border-left:5px solid var(--mango);padding:12px 16px;border-radius:10px}
+.list{display:flex;flex-direction:column;gap:20px}
+.empty{padding:30px;text-align:center;color:var(--muted);background:#ffffff80;border:2px dashed var(--line);border-radius:18px}
+/* the pickup ticket */
+.ticket{display:grid;grid-template-columns:1fr 150px;background:var(--card);border-radius:20px;position:relative;box-shadow:0 2px 0 var(--line)}
+.t-main{padding:22px 24px}.t-main p{margin:.3rem 0}.where{font-weight:500}
+.actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.t-stub{border-left:3px dashed var(--line);background:var(--leaf2);border-radius:0 20px 20px 0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px;position:relative}
+.t-stub::before,.t-stub::after{content:'';position:absolute;left:-13px;width:23px;height:23px;border-radius:50%;background:var(--bg)}
+.t-stub::before{top:-12px}.t-stub::after{bottom:-12px}
+.t-stub strong{font-size:2.8rem}.t-stub span{margin-top:-6px;font-weight:600}.t-stub em{font-style:normal;margin-top:10px;font-size:.85rem;font-weight:600}.urgent{color:var(--berry)}
+.s-claimed .t-stub{background:#ffe9b0}.s-collected .t-stub{background:var(--ink);color:#fff}.s-cancelled{opacity:.55}
+.pill{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 11px;border-radius:99px;background:var(--leaf2);color:var(--leaf)}.pill.claimed{background:#ffe9b0;color:#7a5200}.pill.collected{background:var(--ink);color:#fff}
+.tbl{padding:8px 24px}.trow{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}.trow:last-child{border:0}.trow p{margin:0}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.tile{background:var(--ink);color:#fff;border-radius:22px;padding:22px}.tile:nth-child(2){background:var(--leaf)}.tile:nth-child(3){background:var(--mango);color:var(--ink)}.tile:nth-child(4){background:var(--berry)}
+.tile b{font-size:2.6rem;display:block}.tile span{font-size:.9rem}
+.bar{display:grid;grid-template-columns:110px 1fr 50px;align-items:center;gap:12px;margin:10px 0}.bar i{height:16px;background:var(--leaf);border-radius:99px;display:block;min-width:6px}.bar b{text-align:right}
+.foot{text-align:center;color:var(--muted);padding:30px 20px;border-top:1px solid var(--line)}
+@media(max-width:760px){.hero,.steps,.tiles,.grid2{grid-template-columns:1fr 1fr}.hero,.steps{grid-template-columns:1fr}.hero-card{transform:none}.ticket{grid-template-columns:1fr}.t-stub{border-left:0;border-top:3px dashed var(--line);border-radius:0 0 20px 20px;flex-direction:row;gap:12px}.t-stub::before,.t-stub::after{display:none}.grid2{grid-template-columns:1fr}.tiles{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
